@@ -35,13 +35,35 @@
     a.back:hover {
       background: #e68900;
     }
+    @media screen and (max-width: 600px) {
+      body {
+        font-size: 14px;
+      }
+      iframe {
+        width: 100%;
+        height: auto;
+      }
+    }
+    @media screen and (min-width: 601px) {
+      iframe {
+        width: 970px;
+        height: 804px;
+      }
+    }
+    @media screen and (min-width: 801px) {
+      iframe {
+        width: 485px;
+        height: 402px;
+      }
+    }
+    
   </style>
 </head>
 <body>
   <header>🎮 Bert's Routine</header>
 
   <!-- Your Scratch embed -->
-  <iframe src="https://scratch.mit.edu/projects/1206800280/embed" 
+  <iframe class="scratch-embed" src="https://scratch.mit.edu/projects/1206800280/embed" 
   allowtransparency="true" 
   width="970" 
   height="804" 
